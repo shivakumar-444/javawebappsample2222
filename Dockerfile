@@ -1,4 +1,3 @@
-FROM tomcat
-
-RUN rm -rf $CATALINA_HOME/webapps/ROOT
-COPY target/calculator-1.0.war $CATALINA_HOME/webapps/ROOT.war
+FROM tomcat:8.0.20-jre8
+# Dummy text to test 
+COPY target/java-web-app*.war /usr/local/tomcat/webapps/java-web-app.war
